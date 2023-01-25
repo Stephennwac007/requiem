@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:5000/posts";
+const url = "https://requiem-api-services.onrender.com/posts";
 
 export const fetchPosts = async () => axios.get(url);
 export const createPost = async (newPostData) => axios.post(url, newPostData);
