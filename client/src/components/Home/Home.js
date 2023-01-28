@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Container, Grid, Grow } from "@material-ui/core";
 import { useDispatch } from "react-redux";
 
-import { getPosts } from "./actions/posts";
-import Posts from "./components/Posts/Posts.js";
-import Form from "./components/Form/Form.js";
-import useStyles from "./styles";
+import Posts from "../../components/Posts/Posts.js";
+import Form from "../../components/Form/Form.js";
+import { getPosts } from "../../actions/posts";
+// import useStyles from "../../styles";
 
 const Home = () => {
   const [currentId, setCurrentId] = useState(0); 
   // const [currentId, setCurrentId] = useState(null); 
-  const classes = useStyles();
+  // const classes = useStyles();
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Home = () => {
     <Grow in>
       <Container>
         <Grid
-          className={classes.mainContainer}
+          // className={classes.mainContainer}
           container
           justifyContent="space-between"
           alignItems="stretch"
